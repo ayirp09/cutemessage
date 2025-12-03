@@ -1,17 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specially For You</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specially For You!!! — Clone</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="message-box">
-        <h1>Specially For You!!!</h1>
-        <p>This is my first live demo website.</p>
-        <button>Click to See My Message</button>
-    </div>
+
+  <div class="container">
+
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Specially For You!!! 🎁</h1>
+        <p class="sub">This page unlocks magic when you arrive with a secret token.</p>
+
+        <div class="btn-wrap">
+          <button id="openDemo" class="btn primary">Open Demo</button>
+          <button id="howWorks" class="btn outline">How it works</button>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?q=80" alt="">
+      </div>
+    </header>
+
+    <section id="special" class="special-card hidden">
+      <h2>You’ve unlocked something special ✨</h2>
+      <p class="info">We detected a token in the URL. This is your personalized reveal.</p>
+
+      <div class="token-box" id="tokenValue"></div>
+
+      <p class="small-note">Tip: use <code>?mcp_token=anything</code> in your URL.</p>
+    </section>
+
+    <section class="info-cards">
+      <div class="card">
+        <h3>How to use</h3>
+        <ul>
+          <li>Open page with <code>?mcp_token=abc123</code></li>
+          <li>Special content appears automatically</li>
+          <li>You can integrate backend validation too</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Next steps</h3>
+        <ul>
+          <li>Need exact layout copy? I’ll match it.</li>
+          <li>Want React version? I can convert it.</li>
+          <li>Need backend token API? I’ll create it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Made with ❤️ · Static Clone Version
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
